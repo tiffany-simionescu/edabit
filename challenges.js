@@ -122,3 +122,51 @@ function profitableGamble(prob, prize, pay) {
 console.log(profitableGamble(0.2, 50, 9)); // true
 console.log(profitableGamble(0.9, 1, 2)); // false
 console.log(profitableGamble(0.9, 3, 2)); // true
+
+/*
+    Recursion: Length of a String
+        - Write a function that returns the length of a string. Make your function recursive.
+*/
+
+function length(str) {
+  return str.length;
+}
+
+console.log(length("apple")); // 5
+console.log(length("make")); // 4
+console.log(length("a")); // 1
+console.log(length("")); // 0
+
+/*
+    Check if an Integer is Divisible By Five 
+        - Create a function that returns true if an integer is divisible by 5, and false otherwise.
+*/
+
+function divisibleByFive(num) {
+  if (num % 5 === 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+console.log(divisibleByFive(5)); // true
+console.log(divisibleByFive(-55)); // true
+console.log(divisibleByFive(37)); // false
+
+/*
+    Multiple of 100
+        - Create a function that takes an integer and returns true if it's divisible by 100, otherwise return false.
+*/
+
+function divisible(num) {
+  if (num % 100 === 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+console.log(divisible(1)); // false
+console.log(divisible(1000)); // true
+console.log(divisible(100)); // true
