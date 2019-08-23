@@ -392,3 +392,64 @@ function search2(arr, item) {
 console.log(search2([1, 2, 3, 4], 3)); // 2
 console.log(search2([2, 4, 6, 8, 10], 8)); // 3
 console.log(search2([1, 3, 5, 7, 9], 11)); // -1
+
+/* 
+    Concatenating Two Integer Arrays
+        - Create a function to cocatenate two integer arrays.
+*/
+
+function concat(arr1, arr2) {
+  return arr1.concat(arr2);
+}
+
+/*
+    Arrow function
+
+    const concat = (arr1, arr2) => arr1.concat(arr2);
+*/
+
+console.log(concat([1, 3, 5], [2, 6, 8]));
+// [1, 3, 5, 2, 6, 8]
+console.log(concat([7, 8], [10, 9, 1, 1, 2]));
+// [7, 8, 10, 9, 1, 1, 2]
+console.log(concat([4, 5, 1], [3, 3, 3, 3, 3]));
+// [4, 5, 1, 3, 3, 3, 3, 3]
+
+/*
+    Return the Last Element in an Array
+        - Create a function that accepts an array and returns the last item in the array
+*/
+
+function getLastItem(arr) {
+  return arr.pop();
+}
+
+/* 
+    Arrow Function
+
+    const getLastItem = arr => arr.pop();
+*/
+
+console.log(getLastItem([1, 2, 3])); // 3
+console.log(getLastItem(["cat", "dog", "bird"])); // "bird"
+console.log(getLastItem([true, false, true])); // true
+
+/* 
+    Check if an Array Contains a Given Number
+        - Write a function to check if an array contains a particular number.
+*/
+
+function check(arr, el) {
+  return arr.includes(el);
+}
+
+/*
+    Arrow Function
+
+    const check = (arr, el) => arr.includes(el);
+*/
+
+console.log(check([1, 2, 3, 4, 5], 3)); // true
+console.log(check([1, 1, 2, 1, 1], 3)); // false
+console.log(check([5, 5, 5, 6], 5)); // true
+console.log(check([], 5)); // false
