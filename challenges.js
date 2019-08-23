@@ -343,3 +343,52 @@ function comp(str1, str2) {
 console.log(comp("AB", "CD")); // true
 console.log(comp("ABC", "DE")); // false
 console.log(comp("hello", "edabit")); // false
+
+/*
+    Find the Index (Part 1)
+        - Create a function that finds the index of a given item.
+*/
+
+function search(arr, item) {
+  return arr.indexOf(item);
+}
+
+/* 
+    Arrow Function
+
+    const search = (arr, item) => arr.indexOf(item);
+*/
+
+console.log(search([1, 5, 3], 5)); // 1
+console.log(search([9, 8, 3], 3)); // 2
+console.log(search([1, 2, 3], 4)); // -1
+
+/* 
+    Name Greeting
+        - Create a function that takes a name and returns a greeting. Don't use a normal function but use an "arrow function"
+*/
+
+const helloName = name => `Hello ${name}!`;
+
+console.log(helloName("Gerald")); // "Hello Gerald!"
+console.log(helloName("Tiffany")); // "Hello Tiffany!"
+console.log(helloName("Ed")); // "Hello Ed!"
+
+/* 
+    Find the Index (Part 2)
+        - Create a function that finds the index of a given item if the array is sorted. Use 'search2' instead of 'search' for the function's identifier.
+*/
+
+function search2(arr, item) {
+  return arr.indexOf(item);
+}
+
+/* 
+    Arrow Function
+
+    const search2 = (arr, item) => arr.indexOf(item);
+*/
+
+console.log(search2([1, 2, 3, 4], 3)); // 2
+console.log(search2([2, 4, 6, 8, 10], 8)); // 3
+console.log(search2([1, 3, 5, 7, 9], 11)); // -1
